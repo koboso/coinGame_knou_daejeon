@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:AnimalGame/Assets/Scripts/UI/StartSceneUIController.cs.meta
+guid: de23e09135011c341a12dc7ff557a3b0
+=======
+guid: 0bdd7515de00e9e41ba24b5004a6c72e
+>>>>>>> d1238aea4d4546149fd7c5369b12de84500bc5a7:AnimalGame/Assets/Scripts/UI_Controller/StartSceneUICOntroller.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
