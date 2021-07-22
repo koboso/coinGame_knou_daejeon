@@ -92,7 +92,7 @@ public class ItemSpawn : MonoBehaviour {
 
     IEnumerator ItemCycleControl()    {
         itemState = false;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(7f);
         itemState = true;
     }
 }
