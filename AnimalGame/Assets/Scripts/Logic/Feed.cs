@@ -9,6 +9,8 @@
 public class Feed : MonoBehaviour
 {
     public GameObject feedObject; // feed라는 프리펩 찾기
+    public GameObject pickUp;
+
 
     // 불필요 변수.
     //public Transform feedLocation; // 이 feed 움직인다.
@@ -18,6 +20,7 @@ public class Feed : MonoBehaviour
     private int moveSpeed; // 속도 지정
 
     private Logic logic = null; 
+    //public GameObject pickUp;
 
     void OnEnable(){
         this.GetComponent<BoxCollider2D>().enabled=true;
@@ -38,12 +41,12 @@ public class Feed : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player")){
+    private void OnTriggerEnter2D(Collider2D collision){
+        if (collision.CompareTag("Player")){            
             logic.IncreaseScore();
             this.GetComponent<Collider2D>().enabled = false;
             this.gameObject.SetActive(false);
+            Instantiate(pickUp, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
         }
     }
 
