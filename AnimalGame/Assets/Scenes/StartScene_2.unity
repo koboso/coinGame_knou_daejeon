@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 261398169}
   - component: {fileID: 261398168}
   - component: {fileID: 261398172}
+  - component: {fileID: 261398173}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -237,6 +238,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bdd7515de00e9e41ba24b5004a6c72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &261398173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261398167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de23e09135011c341a12dc7ff557a3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &382404070
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +332,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 261398172}
+      - m_Target: {fileID: 261398173}
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -817,7 +830,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 261398172}
+      - m_Target: {fileID: 261398173}
         m_MethodName: IngameScene
         m_Mode: 1
         m_Arguments:
