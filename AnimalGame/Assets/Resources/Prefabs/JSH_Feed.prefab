@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6232078892440266523}
   - component: {fileID: 1696554747585835298}
   m_Layer: 0
-  m_Name: Feed
+  m_Name: JSH_Feed
   m_TagString: Feed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,4 +166,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feedObject: {fileID: 8638853441730261319}
   feedDelay: 0.5
-  DestroyPosY: -3

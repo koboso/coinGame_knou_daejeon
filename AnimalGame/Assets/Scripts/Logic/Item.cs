@@ -11,6 +11,8 @@ public class Item : MonoBehaviour {
     public Transform itemLocation;// 아이템 생성 위치
     public float durationTime;    // 아이템 지속 시간
     public static bool isEnabled; // 아이템 활성화 상태
+    public GameObject pickUp;
+
 
     private float DestroyPosY = -5f;
 
@@ -25,6 +27,7 @@ public class Item : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)    {
         if (collision.CompareTag("Player")){
+            Instantiate(pickUp, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
             if (!collision.GetComponent<Player>().IsPowerMode){
                 collision.GetComponent<Player>().PowerMode();
             }

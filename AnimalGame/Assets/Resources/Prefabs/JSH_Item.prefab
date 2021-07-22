@@ -228,3 +228,4 @@ MonoBehaviour:
   itemObject: {fileID: 8638853441730261319}
   itemLocation: {fileID: 9038169927038242608}
   durationTime: 3
+  pickUp: {fileID: 4152740111205016561, guid: badfc58420e7ea948b5b6c33ef195972, type: 3}
