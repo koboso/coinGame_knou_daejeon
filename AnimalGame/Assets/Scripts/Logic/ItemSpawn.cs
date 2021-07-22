@@ -40,7 +40,7 @@ public class ItemSpawn : MonoBehaviour {
         if (logic.state!=Logic.GameState.PLAY) return;
 
         SpawnItem();
-        GodMode();
+        //GodMode();
     }
 
     private void SpawnItem()    {

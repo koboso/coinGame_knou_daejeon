@@ -235,11 +235,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 74081030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d4daf15e03c764590af4f3d87defc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 55aef5eb8ad54634ab44cf2d4e938186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countDownText: {fileID: 0}
-  lifeImage: []
+  scoreText: {fileID: 1315486372}
 --- !u!1 &163150885
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +322,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 74081035}
-        m_MethodName: IngameScene
+        m_MethodName: OnClickRetryGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -453,7 +452,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 74081035}
-        m_MethodName: StartScene
+        m_MethodName: OnClickGoHome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -976,7 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
-  m_EffectDistance: {x: -5, y: -5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!1 &1547208814
 GameObject:

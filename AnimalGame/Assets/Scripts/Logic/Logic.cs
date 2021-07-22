@@ -9,11 +9,8 @@ using UnityEngine;
  * @date  2021-07-09 */
 
 public class Logic : MonoBehaviour {
-    // 게임 카운트 다운.
-
     private UIController uiController;
     public GameObject uiCanvas;
-
     private float countDownNumber = 5.4f;
     private enum Direction { STOP = 0, LEFT, RIGHT };
     Direction dir = Direction.STOP;
@@ -22,12 +19,11 @@ public class Logic : MonoBehaviour {
     // 게임 전체적인 상태값을 가지고 있는 공용체
     public enum GameState { NONE = 0, READY, PLAY, FAIL }
     public GameState state = GameState.NONE;
-
     // 게임 스코어
     private int gameScore = 0;
-
     // 플레이어 객체
     private GameObject player;
+    private bool isSaveLocked = false;
 
     private void Awake() {
         uiController=uiCanvas.GetComponent<UIController>();
@@ -40,9 +36,10 @@ public class Logic : MonoBehaviour {
     private void Init() {
         player=GameObject.Find("JSH_Player").gameObject;
         state=GameState.READY;
-        gameScore = 0;
         InitHp();
         uiController.InitLifeImage();
+        InitScore();
+        isSaveLocked=false;
     }
 
     // 실질적인 게임로직 함수.
@@ -50,8 +47,14 @@ public class Logic : MonoBehaviour {
         switch (state) {
             case GameState.NONE: Init(); break;
             case GameState.READY: CountDown(); break;
-            case GameState.PLAY: PlayerController(); break;
-            case GameState.FAIL: uiController.FailScene(); break;
+            case GameState.PLAY: 
+                PlayerController();
+                uiController.SetScore(gameScore);
+                break;
+            case GameState.FAIL: 
+                uiController.FailScene();
+                SaveScore();
+                break;
         }
     }
 
@@ -89,7 +92,32 @@ public class Logic : MonoBehaviour {
             int number = (int)countDownNumber;
             uiController.SetCountDownText(number);
         }
-        
+    }
+    
+    public int GameScore{
+        get
+        {
+            return this.gameScore;
+        }
+    }
+
+    // 스코어 초기화.
+    public void InitScore(){
+        this.gameScore=0;
+    }
+
+    // 게임 스코어가 증가
+    public void IncreaseScore(){
+        this.gameScore++;
+    }
+
+    private void SaveScore(){
+        // 1회만 저장되도록 하기 위한 예외 처리.
+        if (isSaveLocked) return;
+        isSaveLocked=true;
+
+        PlayerPrefs.SetInt("Score", GameScore);
+        PlayerPrefs.Save();
     }
 
     // 플레이어 컨트롤 관리하는 함수
@@ -112,7 +140,6 @@ public class Logic : MonoBehaviour {
             PlayerMovement(dir);
         }
 #endif
-
     }
     private void  PlayerMovement(Direction dir){
         if(dir == Direction.LEFT){

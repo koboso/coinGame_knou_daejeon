@@ -100,9 +100,8 @@ public class FeedSpawn : MonoBehaviour {
             // 만약 Feed[i]가 활성화 되어있다면
             if (feedArray[i])
             {
-                // Feed[i]의 Collider2D가 비활성 되었다면
-                if (feedArray[i].GetComponent<Collider2D>().enabled == false)
-                {
+                
+                if (!feedArray[i].gameObject.activeSelf){
                     // 다시 Collider2D를 활성화 시키고
                     feedArray[i].GetComponent<Collider2D>().enabled = true;
                     // Feed를 메모리로 돌려보내고
