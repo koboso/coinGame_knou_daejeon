@@ -1423,6 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d4daf15e03c764590af4f3d87defc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gamescoreText: {fileID: 1893197346}
   countDownText: {fileID: 1520111737}
   lifeImage:
   - {fileID: 1969172333}

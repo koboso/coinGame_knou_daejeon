@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 // 인게임에서 사용되는 UI Controller
 public class UIController : MonoBehaviour{
+
+    public Text gamescoreText;
+
     public Text countDownText;
     public GameObject[] lifeImage;
     private int lifeIndex =2;
@@ -29,6 +32,10 @@ public class UIController : MonoBehaviour{
                 lifeImage[i].gameObject.SetActive(true);
             }
         }
+    }
+
+    public void SetScore(int a){
+        this.gamescoreText.text = "Score :"+a.ToString();
     }
 
     public void SetCountDownText(int number){

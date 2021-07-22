@@ -24,22 +24,19 @@ public class Enemy : MonoBehaviour{
     }
 
     void Update(){
-
         // 양동건.
         // 게임 플레이 상태에선 등장하지 않도록 예외처리 코드
         if (logic.state!=Logic.GameState.PLAY) return;
-
-
         transform.Translate(Vector2.down * Time.deltaTime);
-
-        if (transform.position.y <= DestroyPosY)
-            GetComponent<Collider2D>().enabled = false;
+        if (transform.position.y <=DestroyPosY) this.GetComponent<Collider2D>().enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.CompareTag("Player")){
+            if (!collision.GetComponent<Player>().IsPowerMode){
+                logic.CollisionPlayer();
+            }
             GetComponent<Collider2D>().enabled = false;
-            logic.CollisionPlayer();
         }
     }
 }

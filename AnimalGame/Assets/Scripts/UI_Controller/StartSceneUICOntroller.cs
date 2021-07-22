@@ -22,11 +22,6 @@ public class StartSceneUICOntroller : MonoBehaviour
     public void IngameScene(){
         SceneManager.LoadScene(1);
     }
-
-    // 게임오버
-    public void FailScene(){
-        SceneManager.LoadScene(2);
-    }
     // 종료 버튼
     public void ExitGame(){
 #if UNITY_ANDROID

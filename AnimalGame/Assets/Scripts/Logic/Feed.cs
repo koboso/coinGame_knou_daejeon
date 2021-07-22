@@ -13,11 +13,16 @@ public class Feed : MonoBehaviour
     // 불필요 변수.
     //public Transform feedLocation; // 이 feed 움직인다.
     public float feedDelay; // 지연
-    public float DestroyPosY = -7f;
+    private float DestroyPosY = -7f;
     // 210714 추가
     private int moveSpeed; // 속도 지정
 
+    private Logic logic = null; 
+
     void OnEnable(){
+        this.GetComponent<BoxCollider2D>().enabled=true;
+        logic=GameObject.Find("Logic").gameObject.GetComponent<Logic>();
+
         moveSpeed = Random.Range(0, 10);
 
         //Debug.Log("먹이 속도: " + moveSpeed);
@@ -27,34 +32,19 @@ public class Feed : MonoBehaviour
 
         transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
 
-        if (transform.position.y <= DestroyPosY)
-            GetComponent<Collider2D>().enabled = false;
+        if (transform.position.y <=DestroyPosY){
+            this.GetComponent<Collider2D>().enabled=false;
+            this.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            print("코인먹음");
-            GetComponent<Collider2D>().enabled = false;
-            Score.score += ChoiceScore(moveSpeed);
+        if (collision.CompareTag("Player")){
+            logic.IncreaseScore();
+            this.GetComponent<Collider2D>().enabled = false;
+            this.gameObject.SetActive(false);
         }
     }
 
-    // 속도에 따른 점수
-    private int ChoiceScore(int moveSpeed)
-    {
-        int score = 0;
-
-        if (moveSpeed <= 3)
-            score = 1;
-
-        if (moveSpeed > 3 && moveSpeed <= 7)
-            score = 5;
-
-        if (moveSpeed > 7 && moveSpeed < 10)
-            score = 10;
-
-        return score;
-    }
 }

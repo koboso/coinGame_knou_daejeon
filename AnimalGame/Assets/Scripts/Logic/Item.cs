@@ -24,10 +24,11 @@ public class Item : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision)    {
-        if (collision.CompareTag("Player"))        {
+        if (collision.CompareTag("Player")){
+            if (!collision.GetComponent<Player>().IsPowerMode){
+                collision.GetComponent<Player>().PowerMode();
+            }
             GetComponent<Collider2D>().enabled = false;
-            ItemCountdown.countdown = durationTime;
-            isEnabled = true;
         }
         // 획득시 효과음 발생
     }
