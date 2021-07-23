@@ -227,4 +227,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyObject: {fileID: 8638853441730261319}
   enemyLocation: {fileID: 9038169927038242608}
-  pickUp: {fileID: 3287863405459569023, guid: 8ba345062e536b14181d414548ad90f2, type: 3}
+  CollisionEffect: {fileID: 1566872926873847051, guid: ac4b1ea55cbef21418f5c5370e2a14a8,
+    type: 3}

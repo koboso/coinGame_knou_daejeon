@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour{
 
     public GameObject enemyObject;
     public Transform enemyLocation;
-    public GameObject pickUp;
+    public GameObject CollisionEffect;
 
     private float DestroyPosY = -7f;
 
@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour{
 
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.CompareTag("Player")){
-            Instantiate(pickUp, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+            Instantiate(CollisionEffect, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
             if (!collision.GetComponent<Player>().IsPowerMode){
                 logic.CollisionPlayer();
             }

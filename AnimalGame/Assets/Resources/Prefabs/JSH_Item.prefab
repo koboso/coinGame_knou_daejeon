@@ -228,4 +228,5 @@ MonoBehaviour:
   itemObject: {fileID: 8638853441730261319}
   itemLocation: {fileID: 9038169927038242608}
   durationTime: 3
-  pickUp: {fileID: 3287863405459569023, guid: 8ba345062e536b14181d414548ad90f2, type: 3}
+  CollisionEffect: {fileID: 3286655585754024008, guid: 7ee170df72a293b47b9f7c618e5f6cab,
+    type: 3}
