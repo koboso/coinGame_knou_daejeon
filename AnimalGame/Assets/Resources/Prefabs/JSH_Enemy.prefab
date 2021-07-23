@@ -227,4 +227,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyObject: {fileID: 8638853441730261319}
   enemyLocation: {fileID: 9038169927038242608}
-  pickUp: {fileID: 4152740111205016561, guid: 414c0f8cbc4c24f4fa410d255703238c, type: 3}
+  pickUp: {fileID: 3287863405459569023, guid: 8ba345062e536b14181d414548ad90f2, type: 3}
