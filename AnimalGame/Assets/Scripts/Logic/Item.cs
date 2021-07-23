@@ -12,7 +12,7 @@ public class Item : MonoBehaviour {
     public float durationTime;    // 아이템 지속 시간
     public static bool isEnabled; // 아이템 활성화 상태
     public GameObject CollisionEffect;
-
+    private bool isLocked = false;
 
     private float DestroyPosY = -5f;
 
@@ -27,9 +27,15 @@ public class Item : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)    {
         if (collision.CompareTag("Player")){
-            Instantiate(CollisionEffect, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
             if (!collision.GetComponent<Player>().IsPowerMode){
+
+                GameObject player = collision.gameObject;
+
                 collision.GetComponent<Player>().PowerMode();
+                if (!isLocked){
+                    isLocked=true;
+                    Instantiate(CollisionEffect, player.transform.position, Quaternion.identity);
+                }
             }
             GetComponent<Collider2D>().enabled = false;
         }

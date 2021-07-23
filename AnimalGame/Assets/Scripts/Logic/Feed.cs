@@ -10,6 +10,7 @@ public class Feed : MonoBehaviour
 {
     public GameObject feedObject; // feed라는 프리펩 찾기
     public GameObject CollisionEffect;
+    public bool isLock = false;
 
 
     // 불필요 변수.
@@ -22,12 +23,13 @@ public class Feed : MonoBehaviour
     private Logic logic = null; 
 
     void OnEnable(){
+
+        isLock=false;
         this.GetComponent<BoxCollider2D>().enabled=true;
         logic=GameObject.Find("Logic").gameObject.GetComponent<Logic>();
 
         moveSpeed = Random.Range(0, 10);
 
-        //Debug.Log("먹이 속도: " + moveSpeed);
     }
 
     void Update(){
@@ -41,11 +43,18 @@ public class Feed : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
-        if (collision.CompareTag("Player")){            
+        if (collision.CompareTag("Player")){
+
+            GameObject player = collision.gameObject;
             logic.IncreaseScore();
             this.GetComponent<Collider2D>().enabled = false;
             this.gameObject.SetActive(false);
-            Instantiate(CollisionEffect, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+
+            if (!isLock){
+                isLock=true;
+                Instantiate(CollisionEffect, player.transform.position, Quaternion.identity);
+            }
+
         }
     }
 

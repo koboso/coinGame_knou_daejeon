@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class EffectCoroutine : MonoBehaviour
 {
-    private void OnEnable()
-    {
+    private void OnEnable(){
         StartCoroutine(destroyCorutine());
     }
     IEnumerator destroyCorutine()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(this.gameObject);
-
     }
 }

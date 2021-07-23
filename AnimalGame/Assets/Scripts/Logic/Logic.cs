@@ -74,7 +74,33 @@ public class Logic : MonoBehaviour {
         if (hp<1) SetState(Logic.GameState.FAIL);
         hp-=1;
         uiController.LifeDown();
+        StartCoroutine(CameraShake());
     }
+
+
+    float t = 0.15f;
+    float wt = 0.05f;
+
+    IEnumerator CameraShake(){
+
+        Camera.main.transform.position=new Vector3(t, 0, -10);
+        yield return new WaitForSeconds(wt);
+        Camera.main.transform.position=new Vector3(-t, 0, -10);
+        yield return new WaitForSeconds(wt);
+        Camera.main.transform.position=new Vector3(t, 0, -10);
+        yield return new WaitForSeconds(wt);
+        Camera.main.transform.position=new Vector3(-t, 0, -10);
+        yield return new WaitForSeconds(wt);
+        Camera.main.transform.position=new Vector3(-t, 0, -10);
+        yield return new WaitForSeconds(wt);
+        Camera.main.transform.position=new Vector3(t, 0, -10);
+        yield return new WaitForSeconds(wt);
+
+        Camera.main.transform.position=new Vector3(0, 0, -10);
+
+    }
+
+
 
     public void InitHp() {
         hp=2;

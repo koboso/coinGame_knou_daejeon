@@ -171,10 +171,10 @@ TextureImporter:
       name: pixelated_tilesheet_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 101
-        width: 8
-        height: 7
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: pixelated_tilesheet_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 101
-        width: 21
-        height: 13
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: pixelated_tilesheet_2
       rect:
         serializedVersion: 2
-        x: 142
-        y: 101
-        width: 25
-        height: 27
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: pixelated_tilesheet_3
       rect:
         serializedVersion: 2
-        x: 194
-        y: 101
-        width: 39
-        height: 27
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: pixelated_tilesheet_4
       rect:
         serializedVersion: 2
-        x: 230
-        y: 74
-        width: 26
-        height: 43
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: pixelated_tilesheet_5
       rect:
         serializedVersion: 2
-        x: 18
-        y: 84
-        width: 13
-        height: 7
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: pixelated_tilesheet_6
       rect:
         serializedVersion: 2
-        x: 38
-        y: 86
-        width: 17
-        height: 12
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,342 +310,6 @@ TextureImporter:
       bones: []
       spriteID: 7b70cfe2cb438a9b0800000000000000
       internalID: -5068743397758728265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_7
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 73
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1337e360e91952610800000000000000
-      internalID: 1595841750868325169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_8
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 82
-        width: 19
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 838a51b14aee9b1e0800000000000000
-      internalID: -2181450155887843272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_9
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 71
-        width: 38
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81af0da9e1130a560800000000000000
-      internalID: 7322907001620593176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_10
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 74
-        width: 23
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2472c9e6609b012a0800000000000000
-      internalID: -6768706802661185726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_11
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 63
-        width: 42
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efa3b1f42163e7880800000000000000
-      internalID: -8611385985221313794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_12
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 37
-        width: 40
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27890c4c6b471a8b0800000000000000
-      internalID: -5142700971146569614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_13
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 42
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9e79d13e7af0f4c0800000000000000
-      internalID: -4255626227955958118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_14
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 53
-        width: 17
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fff93749cbd324e0800000000000000
-      internalID: -2007519351347216391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_15
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 0
-        width: 62
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbe973d8d683f52b0800000000000000
-      internalID: -5593690168999043397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_16
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 38
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8c23d0874ae2c400800000000000000
-      internalID: 343094114458479759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_17
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 10
-        width: 15
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d84db28235945ef30800000000000000
-      internalID: 4604166815561274509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_18
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 40
-        width: 8
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cc0f1008841fbb00800000000000000
-      internalID: 846417829319085256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_19
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 25
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57bed178940a4a1f0800000000000000
-      internalID: -1034525776728429707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_20
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 9
-        width: 18
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcd334d6f87b1a6d0800000000000000
-      internalID: -2980899651701228085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_21
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 6
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edf09815d1b6c5c10800000000000000
-      internalID: 2043626104585523166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixelated_tilesheet_22
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 0
-        width: 11
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efca56b3fc9eb9770800000000000000
-      internalID: 8618739388167597310
       vertices: []
       indices: 
       edges: []

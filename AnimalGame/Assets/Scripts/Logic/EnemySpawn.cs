@@ -71,6 +71,7 @@ public class EnemySpawn : MonoBehaviour
                 if (enemyArray[i].GetComponent<Collider2D>().enabled == false)
                 {
                     enemyArray[i].GetComponent<Collider2D>().enabled = true;
+                    enemyArray[i].SetActive(true);
                     memoryPool.RemoveItem(enemyArray[i]);
                     enemyArray[i] = null;
                 }
